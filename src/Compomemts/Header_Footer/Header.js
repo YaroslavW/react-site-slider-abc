@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -6,16 +6,23 @@ import IconButton from "@material-ui/core/IconButton";
 import SideDrawer from './SideDrawer';
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
-
+  const [headerShow, setHeaderShow] = useState(false);
   const toggleDrawer = (value) => {
     setDrawerOpen(value)
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, [headerShow]);
+  const handleScroll = () =>{
+    (window.scrollY > 0) ? setHeaderShow(true) : setHeaderShow(false);
   }
   return (
     <AppBar
       position="fixed"
       style={{
-        background: "#090050",
-        padding: " 20px 0px"
+        background: headerShow ? "#090050" : "transparent",
+        padding: " 20px 0px",
+        boxShadow: 'none'
       }}
     >
       <Toolbar>

@@ -4,7 +4,7 @@ import Header from './Compomemts/Header_Footer/Header';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ height: "2000px", background: "#BEE0FF" }}>
       <Header />
     </div>
   );
