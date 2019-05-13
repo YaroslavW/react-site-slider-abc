@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from './Carousel';
+import Timer from './Timer';
 const Slider = () => {
   return (
     <div style={{position:'relative'}}>
@@ -9,6 +10,7 @@ const Slider = () => {
           React Meetting
         </div>
       </div>
+      <Timer/>
     </div>
   );
 };
