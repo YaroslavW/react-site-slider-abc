@@ -28,7 +28,7 @@ const Header = () => {
       <Toolbar>
         <div className="header_logo">
           <div className="font_left header_logo_title">wmg</div>
-          <div className="font_left header_logo_caption">React mitting</div>
+          <div className="font_left header_logo_caption">React meetting</div>
         </div>
         <IconButton
           aria-label="Menu"
