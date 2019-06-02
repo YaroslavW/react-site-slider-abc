@@ -5,6 +5,7 @@ import Slider from './Compomemts/Slider';
 import Info from './Compomemts/Info';
 import Highlights from './Compomemts/Highlights';
 import Pricing from './Compomemts/Pricing';
+import Location from './Compomemts/Location';
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
       <Info />
       <Highlights />
       <Pricing />
+      <Location />
     </div>
   );
 }
