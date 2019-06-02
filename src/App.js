@@ -6,6 +6,7 @@ import Info from './Compomemts/Info';
 import Highlights from './Compomemts/Highlights';
 import Pricing from './Compomemts/Pricing';
 import Location from './Compomemts/Location';
+import Footer from './Compomemts/Header_Footer/Footer'
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
       <Highlights />
       <Pricing />
       <Location />
+      <Footer />
     </div>
   );
 }
